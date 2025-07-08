@@ -20,9 +20,12 @@ If you find some parts of the code useful, kindly cite:
   doi={10.1109/JSAC.2025.3574586}}
 ```
 
-## Some parts of the codes are also related to the conference paper. "Control-Aware Transmit Power Allocation for 6G In-Factory Subnetwork Control Systems" 
+## Some parts of the codes are also related to the conference paper. "Control-Aware Transmit Power Allocation for 6G In-Factory Subnetwork Control Systems"
+
 D. Abode, P. M. de Sant Ana, A. Artemenko, R. Adeogun and G. Berardinelli, "Control-Aware Transmit Power Allocation for 6G In-Factory Subnetwork Control Systems," 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall), Washington, DC, USA, 2024, pp. 1-6, doi: 10.1109/VTC2024-Fall63153.2024.10757544.
+
 https://arxiv.org/pdf/2405.11355
+
 Hence, kindly cite
 ```
 @INPROCEEDINGS{10757544,
