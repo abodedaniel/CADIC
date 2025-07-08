@@ -1,7 +1,9 @@
 In progress
 # CADIC - Control Aware Decentralized Interference Coordination
 These codes are for the paper - Goal-Oriented Interference Coordination in 6G In-Factory Subnetworks
+
 D. Abode, P. M. d. S. Ana, R. Adeogun, A. Artemenko and G. Berardinelli, "Goal-Oriented Interference Coordination in 6G In-Factory Subnetworks," in IEEE Journal on Selected Areas in Communications, doi: 10.1109/JSAC.2025.3574586. 
+
 https://ieeexplore.ieee.org/abstract/document/11016694
 
 If you find some parts of the code useful, kindly cite:
