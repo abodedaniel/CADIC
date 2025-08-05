@@ -14,7 +14,7 @@ from scipy.special import j0 as bessel
 from scipy.stats import norm
 import networkx as nx
 import matplotlib.pyplot as plt
-import control_env
+import System_Environments.control_env as control_env
 import torch
 np.set_printoptions(linewidth=75*3)
 

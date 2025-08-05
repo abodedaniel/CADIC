@@ -1,10 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from control_env import *
+from System_Environments.control_env import *
 import torch
-from static_infactory_env_wCartPole import env_subnetwork
+from System_Environments.static_infactory_env_wCartPole import env_subnetwork
 import numpy as np
-from control_env import *
+from System_Environments.control_env import *
 
 
 def collect_mean_lqr(num_of_episodes, num_of_subnetworks, num_subbands, num_steps, factory_length, save_file_name):

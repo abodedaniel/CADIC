@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Fri Sep 24 14:48:12 2021
+Created on Fri Sep 24 14:48:12 2024
 
-@author: root
+@authors: Daniel Abode, Pedro Maia
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -12,57 +12,6 @@ import math
 import bisect
 from scipy import special as sp
 
-##############################################################################################################################################################
-class RRScheduler:
-    def __init__(self, K):
-        self.K = K
-        self.t = 0
-    def select_action(self,):
-        action = self.t % self.K
-        self.t += 1
-        return action
-
-class RRIfTrafficScheduler:
-    def __init__(self, K):
-        self.K = K
-        self.t = 0
-
-    def check_traffic(self, plant):
-            return True if plant.tx_buffer['buffer_data'] > 0 else False
-
-    def select_action(self, plants):
-        for i in range(self.K):
-            action = self.t % self.K
-            if self.check_traffic(plants[action]):
-                self.t += 1
-                return action
-            else:
-                self.t += 1
-        return 0
-
-class AgeScheduler:
-    def __init__(self,):
-        self.test = 0
-    def select_action(self, ul_aoi):
-        return np.argmax(ul_aoi)
-
-class CqiScheduler:
-    def __init__(self, K):
-        self.K = K
-
-    def check_traffic(self, plant):
-        return True if plant.tx_buffer['buffer_data'] > 0 else False
-
-    def select_action(self, plants, option):
-        plant_cqi = []
-        for i in range(self.K):
-            plant_cqi.append((i, plants[i].cqi))
-        reverse = False if option=='min' else True
-        plant_cqi.sort(key=lambda x:x[1], reverse=reverse)
-        for (i, j) in plant_cqi:
-            if self.check_traffic(plants[i]):
-                return i
-        return 0
 
 ##############################################################################################################################################################
 class Controller():

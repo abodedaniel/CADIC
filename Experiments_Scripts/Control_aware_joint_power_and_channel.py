@@ -5,7 +5,7 @@ import scipy
 import scipy.io as sio
 from scipy.optimize import minimize, LinearConstraint
 from scipy.io import savemat
-from static_infactory_env_wCartPole import env_subnetwork
+from System_Environments.static_infactory_env_wCartPole import env_subnetwork
 import time
 np.set_printoptions(precision=0)
 
